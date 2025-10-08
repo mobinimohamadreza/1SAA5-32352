@@ -112,7 +112,7 @@ const ChargeContainer: React.FC = () => {
                             <div className={styles.buttonWrap}>
                                 {chargeAmounts.slice(0, 5).map((amount, index) => (
                                     <Button
-                                        className={values.customAmount === amount.value  ? styles.buttonActive : undefined}
+                                        className={(values.customAmount === amount.value && !showCustom)  ? styles.buttonActive : undefined}
                                         key={index}
                                         onClick={() => {
                                             setValue('customAmount', amount.value, { shouldValidate: true });
