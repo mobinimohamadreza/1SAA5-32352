@@ -1,0 +1,85 @@
+
+.wrapper {
+  max-width: 315px;
+  margin: 0 auto;
+}
+
+
+.Switch {
+  margin-bottom: 30px;
+  margin-top: 10px;
+
+  label {
+    justify-content: center;
+  }
+}
+
+.inputMobile {
+  position: relative;
+  margin-bottom: 30px;
+  input {
+    width: 100%;
+    height: 55px;
+    outline: 0;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    padding-right: 30px !important;
+
+  }
+
+  label {
+    position: absolute;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    pointer-events: none;
+    transform: translateY(13px) ;
+    transition: 0.3s ease-out;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 10;
+    text-align: right;
+    background: #fff;
+    width: fit-content;
+    margin-right: 26px;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+
+  &:focus-within label {
+    color: #000;
+    transform: translateY(-15px);
+    background: #fff;
+
+  }
+
+}
+.filled label {
+  color: #000;
+  transform: translateY(-15px);
+  background: #fff;
+}
+.payment{
+  button{
+    background-color: #f0eff5 !important;
+    width: 95px;
+    border-radius: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border:0;
+    color: #000 !important;
+    span{
+      font-size: 12px;
+    }
+  }
+  .description{
+     font-size: 12px;
+     text-align: center;
+    margin: 0 auto ;
+    width: 100%;
+   }
+}
